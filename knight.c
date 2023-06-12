@@ -2,9 +2,7 @@
 #include <math.h>
 
 short knight(const char *p1, const char *p2) {
-    
-//  https://math.stackexchange.com/questions/1135683/minimum-number-of-steps-for-knight-in-chess/1137144#1137144
-//  algorithm translated from siebenschlaefer's python solution
+ 
 
     short x1 = p1[0] - 97;
     short x2 = p1[1] - 49;
