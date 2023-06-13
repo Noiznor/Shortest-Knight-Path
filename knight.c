@@ -1,9 +1,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-short knight(const char *p1, const char *p2) {
- 
-
+short knight(const char *p1, const char *p2) 
+{
     short x1 = p1[0] - 97;
     short x2 = p1[1] - 49;
     short y1 = p2[0] - 97;
@@ -18,13 +17,16 @@ short knight(const char *p1, const char *p2) {
     
     short m1 = -(a < b ? (a < c ? a : c) : (b < c ? b : c));
     
-    if(!((x1 % 7 + x2 % 7) * (y1 % 7 + y2 % 7)) && dx * dy == 1) {
+    if(!((x1 % 7 + x2 % 7) * (y1 % 7 + y2 % 7)) && dx * dy == 1)
+    {
         return 4;
     }
-    if(dx + dy == 1) {
+    if(dx + dy == 1)
+    {
         return 3;
     }
-    if(dx == 2 && dy == 2) {
+    if(dx == 2 && dy == 2)
+    {
         return 4;
     }
     return m1 + (m1 + dx + dy) % 2;
